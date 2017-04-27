@@ -1,9 +1,15 @@
 <html>
 <head>
-<script>
-window.location.href = "supertoss://lab?url=https://dogspaw.toss.im/pages/gift/teencash?userToken%3DMpWyAR1dEWZ918&title=test";
-</script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
 </head>
 <body>
+<iframe id="f" src="" height="0" frameborder="0" scrolling="no"></iframe>
+<button id="test">Test</button>
+<script>
+$("#test").click(function() {
+	$("#f").attr('src', "supertoss://pay?payToken=1234");
+	window.location.href="http://www.naver.com";
+});
+</script>
 </body>
 </html>
