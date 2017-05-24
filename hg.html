@@ -1,0 +1,15 @@
+<html>
+<head>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+</head>
+<body>
+<input type="text" id="url"/>
+<button id="test">Test</button>
+<script>
+$("#test").click(function() {
+  var url = $("#url").val();
+  window.location.href = url;
+});
+</script>
+</body>
+</html>
