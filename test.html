@@ -6,10 +6,18 @@
 호권님을 위한 사이트
 <input type="text" id="url"/>
 <button id="test">Test</button>
+<br/>
+<br/>
+비트코인 판매 테스트
+<button id="bitcoin">Test</button>
 <script>
 $("#test").click(function() {
   var url = $("#url").val();
   window.location.href = url;
+});
+
+$("#bitcoin").click(function() {
+  window.location.href = "supertoss://lab?title=KORBIT&url=https://dogspaw.toss.im/pages/login?servicePath=bitcoin/web&isAuthTokenNeeded=true";
 });
 </script>
 </body>
