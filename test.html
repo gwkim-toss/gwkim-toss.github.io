@@ -9,7 +9,10 @@
 <br/>
 <br/>
 비트코인 판매 테스트
-<button id="bitcoin">Test</button>
+<button id="bitcoin">DEV</button>
+<br/>
+<br/>
+<button id="bitcoin-alpha">ALPHA</button>
 <script>
 $("#test").click(function() {
   var url = $("#url").val();
@@ -18,6 +21,10 @@ $("#test").click(function() {
 
 $("#bitcoin").click(function() {
   window.location.href = "supertoss://lab?title=KORBIT&url=https://dogspaw.toss.im/pages/login?servicePath=bitcoin/web&isAuthTokenNeeded=true";
+
+});
+$("#bitcoin-alpha").click(function() {
+  window.location.href = "supertoss://lab?title=KORBIT&url=https://alpha.toss.im/pages/login?servicePath=bitcoin/web&isAuthTokenNeeded=true";
 });
 </script>
 </body>
