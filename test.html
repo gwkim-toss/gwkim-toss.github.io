@@ -3,28 +3,16 @@
 <script src="https://code.jquery.com/jquery.min.js"></script>
 </head>
 <body>
-호권님을 위한 사이트
-<input type="text" id="url"/>
-<button id="test">Test</button>
-<br/>
-<br/>
-비트코인 판매 테스트
-<button id="bitcoin">DEV</button>
-<br/>
-<br/>
-<button id="bitcoin-alpha">ALPHA</button>
+<button id="one">OPEN</button>
+<button id="two">HREF</button>
+
 <script>
-$("#test").click(function() {
-  var url = $("#url").val();
-  window.location.href = url;
+$("#one").click(function() {
+  window.location.href = "supertoss://main?page=service";
 });
 
-$("#bitcoin").click(function() {
-  window.location.href = "supertoss://lab?title=KORBIT&url=https://dogspaw.toss.im/pages/login?servicePath=bitcoin/web&isAuthTokenNeeded=true&isPasswordRequired=true";
-
-});
-$("#bitcoin-alpha").click(function() {
-  window.location.href = "supertoss://lab?title=KORBIT&url=https://alpha.toss.im/pages/login?servicePath=bitcoin/web&isAuthTokenNeeded=true&isPasswordRequired=true";
+$("#two").click(function() {
+  window.open("supertoss://main?page=service");
 });
 </script>
 </body>
